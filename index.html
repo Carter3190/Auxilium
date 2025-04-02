@@ -1,193 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Auxilium</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="styles.css"> 
-  </head>
-  <head>
-    
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-
-    /* Primary colors */
-    .soft-red {
-      background-color: #f8b4b4; /* Soft Red */
-    }
-
-    .soft-lavender {
-      background-color: #d6c6f7; /* Soft Lavender */
-    }
-
-    /* Header */
-    header {
-      background-color: #f8b4b4;
-      padding: 20px;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      font-weight: 600;
-    }
-
-    /* Sign In Section */
-    .sign-in {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #d6c6f7;
-      padding: 10px 20px;
-      border-radius: 25px;
-      cursor: pointer;
-    }
-    <body>
-
-  <!-- Header -->
-  <header>
-    <h1>Auxilium</h1>
-    <span id="signInText" class="sign-in">Sign In</span>
-  </header>
-
-  <!-- Your other page content -->
-
-  <script>
-    document.getElementById("signInText").addEventListener("click", function() {
-        window.location.href = "sign-up.html";  // Redirects to the sign-in page
-    });
-  </script>
-    }
-
-    .sign-in:hover {
-      background-color: #c0a0f2;
-    }
-
-    /* Hero Section */
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      background-color: #f0f0f0;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .search-bar {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .search-bar input {
-      padding: 15px;
-      width: 60%;
-      font-size: 1.2rem;
-      border: 1px solid #ddd;
-      border-radius: 25px;
-      outline: none;
-      margin-right: 10px;
-    }
-
-    .search-bar button {
-      padding: 15px 30px;
-      background-color: #d6c6f7;
-      color: #fff;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-    }
-
-    .search-bar button:hover {
-      background-color: #c0a0f2;
-    }
-
-    /* Services Carousel */
-    .services {
-      padding: 50px 0;
-      background-color: #f8b4b4;
-      text-align: center;
-    }
-
-    .services h3 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #333;
-    }
-
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      padding: 0 10px;
-    }
-
-    .service-item {
-      background-color: white;
-      margin-right: 20px;
-      padding: 30px;
-      border-radius: 15px;
-      width: 200px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .service-item:hover {
-      transform: scale(1.05);
-    }
-
-    .service-item img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .service-item p {
-      margin-top: 15px;
-      font-weight: 600;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer p {
-      font-size: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <!-- Header -->
   <header>
     <h1>Auxilium</h1>
-    <div class="sign-in">Sign In</div>
+    <a href="signin.html" class="sign-in" id="signInText">Sign In</a>
   </header>
 
-  <!-- Hero Section with Search Bar -->
+  <!-- Hero Section -->
   <div class="hero">
     <h2>Find the service you need with ease</h2>
     <div class="search-bar">
@@ -195,54 +22,33 @@
       <button id="search-button">Search</button>
     </div>
   </div>
- 
+
   <!-- Services Carousel -->
   <div class="services">
-    <h3>Our Services</h3>
-    <div class="carousel" id="service-carousel">
-      <div class="service-item">
-        <img src="https://posture-works.com/wp-content/uploads/2023/01/understanding-different-types-of-chiropractic-treatment-1024x682.jpg" alt="Chiropractor">
-        <p>Chiropractor</p>
-      </div>
-      <div class="service-item">
-        <img src="https://via.placeholder.com/200x150?text=Oil+Change" alt="Oil Change">
-        <p>Oil Change</p>
-      </div>
-      <div class="service-item">
-        <img src="https://via.placeholder.com/200x150?text=Dj" alt="DJ">
-        <p>DJ</p>
-      </div>
-      <div class="service-item">
-        <img src="https://via.placeholder.com/200x150?text=Photography" alt="Photography">
-        <p>Photography</p>
-      </div>
-      <div class="service-item">
-        <img src="https://via.placeholder.com/200x150?text=Pharmacy" alt="Pharmacy">
-        <p>Pharmacy</p>
-      </div>
-    </div>
+    <h3>Available Services</h3>
+    <div id="service-carousel" class="carousel"></div>
   </div>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Auxilium. All rights reserved.</p>
   </footer>
-
+  
   <script>
     // Service data
     const services = [
       { name: 'Chiropractor', image: 'https://via.placeholder.com/200x150?text=Chiropractor' },
       { name: 'Oil Change', image: 'https://via.placeholder.com/200x150?text=Oil+Change' },
-      { name: 'DJ', image: 'https://via.placeholder.com/200x150?text=Dj' },
+      { name: 'DJ', image: 'https://via.placeholder.com/200x150?text=DJ' },
       { name: 'Photography', image: 'https://via.placeholder.com/200x150?text=Photography' },
       { name: 'Pharmacy', image: 'https://via.placeholder.com/200x150?text=Pharmacy' }
     ];
 
-    // Function to update the service carousel based on the search query
-    function searchServices(query) {
-      const filteredServices = services.filter(service => service.name.toLowerCase().includes(query.toLowerCase()));
+    function searchServices() {
+      const query = document.getElementById('search-input').value.toLowerCase();
+      const filteredServices = services.filter(service => service.name.toLowerCase().includes(query));
       const carousel = document.getElementById('service-carousel');
-      carousel.innerHTML = ''; // Clear current carousel content
+      carousel.innerHTML = '';
 
       filteredServices.forEach(service => {
         const serviceItem = document.createElement('div');
@@ -260,4 +66,8 @@
         carousel.appendChild(serviceItem);
       });
     }
-    
+
+    document.getElementById('search-button').addEventListener('click', searchServices);
+  </script>
+</body>
+</html>
