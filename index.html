@@ -55,6 +55,22 @@
       border-radius: 25px;
       cursor: pointer;
     }
+    <body>
+
+  <!-- Header -->
+  <header>
+    <h1>Auxilium</h1>
+    <span id="signInText" class="sign-in">Sign In</span>
+  </header>
+
+  <!-- Your other page content -->
+
+  <script>
+    document.getElementById("signInText").addEventListener("click", function() {
+        window.location.href = "sign-up.html";  // Redirects to the sign-in page
+    });
+  </script>
+    }
 
     .sign-in:hover {
       background-color: #c0a0f2;
