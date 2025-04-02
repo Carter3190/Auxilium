@@ -48,3 +48,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize the carousel with all services on page load
   searchServices();
 });
+
